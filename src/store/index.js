@@ -10,7 +10,22 @@ export default new Vuex.Store({
         {year: '1987', percent: '.331', rank: '12/12'},
         {year: '1988', percent: '.398', rank: '12/12'},
         {year: '1989', percent: '.419', rank: '10/12'},
-        {year: '2001', percent: '.416', rank: '12/12'}
+        {year: '1990', percent: '.400', rank: '11/12'},
+        {year: '1991', percent: '.369', rank: '12/12'},
+        {year: '1992', percent: '.515', rank: '9/12'},
+        {year: '1993', percent: '.485', rank: '10/12'},
+        {year: '1994', percent: '.477', rank: '10/12'},
+        {year: '1995', percent: '.354', rank: '12/12'},
+        {year: '1996', percent: '.415', rank: '12/12'},
+        {year: '1997', percent: '.460', rank: '11/12'},
+        {year: '1998', percent: '.385', rank: '12/12'},
+        {year: '1999', percent: '.407', rank: '12/12'},
+        {year: '2000', percent: '.423', rank: '12/12'},
+        {year: '2001', percent: '.416', rank: '11/12'},
+        {year: '2002', percent: '.485', rank: '8/12'},
+        {year: '2003', percent: '.629', rank: '1/12'},
+        {year: '2004', percent: '.416', rank: '11/12'},
+        {year: '2005', percent: '.416', rank: '11/12'}
       ]
   },
   mutations: {

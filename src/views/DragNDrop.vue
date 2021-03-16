@@ -5,7 +5,7 @@
 <p>Drag the image back and forth between elements.</p>
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img alt="hanshin tiger logo" src="@/assets/HanshinTigersLogo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+  <img alt="hanshin tiger logo" src="@/assets/HanshinTigersLogo.jpg" draggable="true" ondragstart="drag(event)" id="drag1">
 </div>
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -22,7 +22,7 @@ export default {
   name: "DragAndDrop",
 
 methods: {
-     allowDrop(ev) {
+    allowDrop(ev) {
         ev.preventDefault();
     },
 
@@ -44,9 +44,25 @@ methods: {
 #div1, #div2, #div3 {
   float: left;
   width: 100px;
-  height: 35px;
+  height: 100px;
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
 }
+
+#div1:hover,
+#div2:hover,
+#div3:hover {
+  background: black;
+}
+
+img {
+  width: 100px; 
+  height: 100px; 
+} 
+
+.dragover {
+  border: 1px dashed black;
+}
+
 </style>
