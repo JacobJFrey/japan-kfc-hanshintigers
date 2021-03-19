@@ -3,6 +3,8 @@
     <nav>  
       <router-link v-bind:to="{name: 'Home'}">Home</router-link>
       <router-link v-bind:to="{name: 'Form'}">Form</router-link>
+      <router-link v-bind:to="{name: 'Simulator'}">Simulator</router-link>
+      <router-link v-bind:to="{name: 'Movie'}">Movie</router-link>
       <router-link v-bind:to="{name: 'DragAndDrop'}">Test</router-link>
       <!-- <router-link v-bind:to="{name: 'DragAndDrop'}">Test</router-link> -->
     </nav>

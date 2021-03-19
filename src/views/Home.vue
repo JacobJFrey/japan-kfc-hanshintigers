@@ -9,30 +9,18 @@
             Every Christmas, an estimated 3.6 million Japanese families enjoy KFC chicken in what has become a nationwide tradition.
             So, it is not surprising there would be at least one urban legend surrounding KFC and Colonel Sanders.
         </p>
-
-        <div id="fingerlickinggood">
-        
-            <img class="colonelDateApp" src="https://cdn.glitch.com/61974d1d-2cef-4054-87ec-53d80a05b1a0%2Fcolonelsanders.webp?v=1594221817675" />
-            
-        <figcaption class="caption">image from <a href="https://store.steampowered.com/app/1121910/I_Love_You_Colonel_Sanders_A_Finger_Lickin_Good_Dating_Simulator">I LOVE YOU, COLONEL SANDERS! A FINGER LICKIN' GOOD DATING SIMULATOR </a></figcaption>
-        </div>
-
         <hr>
-
-        <table>
-            <h2>Timeline of Pertinent Events</h2>
-            <ul class="timeline">
-            <li>In the 1985 Japan Championship Series, underdog Hanshin Tigers of Kansai beat the Yomiuri Giants of Tokyo, widely considered the Kings of Japanese Baseball.</li>
-            <li>Hanshin fans erupted in celebration at Ebisu Bridge in Osaka. As a salute to the team, a fan resembling every member
-            jumped from the bridge when a player's name was shouted out.</li>
-            <li>Randy Bass, an American who later became an Oklahoma State Senator and MVP of the game, did not have a fan that resembled him.</li>
-            <li>Fans seized a plastic statue of Colonel Sanders, which resembled Randy Bass, from the nearby KFC and threw it from the bridge.</li>
-            <li>After 1985, the Hanshin Tigers endured an 18-year losing streak, often placing in the bottom two positions in their league.</li>
-            <li>On March 10, 2009 while dredging the river, divers uncovered the remains of the Colonel Sanders statue. It was missing its left hand and glasses.</li>
-            <li>The curse can only be lifted when the left hand and glasses of the original statue are returned to KFC.</li>
-            </ul>
-        </table>
-
+          <table>
+              <h2>Timeline of Pertinent Events</h2>
+              <ul class="timeline">
+              <li>In the 1985 Japan Championship Series, underdog Hanshin Tigers of Kansai beat the Yomiuri Giants of Tokyo, widely considered the Kings of Japanese Baseball.</li>
+              <li>Hanshin fans erupted in celebration at Ebisu Bridge in Osaka, where fans celerbrated by jumping in the river when a player's name was shouted out.</li>
+              <li>Randy Bass did not have a fan that resembled him so fans seized a plastic statue of Colonel Sanders from the nearby KFC and threw it into the river.</li>
+              <li>After 1985, the Hanshin Tigers endured a 16-year losing streak, often placing in the bottom two positions in their league.</li>
+              <li>On March 10, 2009 while dredging the river, divers uncovered the remains of the Colonel Sanders statue. It was missing its left hand and glasses.</li>
+              <li>The curse can only be lifted when the left hand and glasses of the original statue are returned to KFC.</li>
+              </ul>
+          </table>
         <hr>
 
         <div>

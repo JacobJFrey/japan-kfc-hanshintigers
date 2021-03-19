@@ -5,11 +5,11 @@
             <div class="title">
                 <span class="button" v-on:click="decreaseSeason()" >
                     <span class="item">{{$store.state.standings[this.previous].years}}</span> 
-                    <span class="item">&#171;</span>
+                    <span class="direction">&#171;</span>
                 </span>
                     <span class="item">{{$store.state.standings[this.index].years}}</span>
                 <span class="button" v-on:click="increaseSeason()">
-                    <span class="item">&#187;</span> 
+                    <span class="direction">&#187;</span> 
                     <span class="item">{{$store.state.standings[this.next].years}}</span>
                 </span>
             </div>
@@ -58,7 +58,6 @@ export default {
     }
 }
 
-
 </script>
 
 <style scoped>
@@ -100,8 +99,12 @@ td, th {
     color: #e7360c;
 }
 
-.item {
+.item, .direction {
     margin: 40px;
+}
+
+.direction {
+    font-size: 2.5rem;
 }
 
 @keyframes previous {

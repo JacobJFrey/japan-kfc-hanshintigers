@@ -12,32 +12,42 @@
     <h4>Curse Exposure Assessment Form</h4>
     Please fill the following form to the best of your curse addled abilities:<br><br>
     
-    <label for="useName">Full Legal Name</label>
-    <input name="userName" type="text" required/><br>
-    
-    <label for="emailAddress">Full Legal Email</label>
-    <input name="emailAddress" type="email" required/><br>
-
-    <label for="DOBirth">Select Your Legal Date of Birth</label>
-    <input name="DOBirth" type="date"/><br><br>
-
-    <label for="favouriteColour">What Color Do You 'Think' You Like</label>
-    <input name="favouriteColour" type="color"/><br>
-
-    <label for="favouriteNumb">Choose Your Least Hated Number</label>
-    <input name="favouriteNumb" type="number"/><br>
-
-    <br>
-    <h5>TO SUBMIT THIS FORM, YOU MUST CHECK THE FOLLOWING BOXES</h5>
+    <span>
+      <label for="useName">Full Legal Name</label>
+      <input name="userName" type="text" required/>
+    </span>
+    <span>  
+      <label for="emailAddress">Full Legal Email</label>
+      <input name="emailAddress" type="email" required/>
+    </span>
+    <span>
+      <label for="DOBirth">Select Your Legal Date of Birth</label>
+      <input name="DOBirth" type="date"/>
+    </span>
+    <span>
+      <label for="favouriteColour">What Color Do You 'Think' You Like</label>
+      <input name="favouriteColour" type="color"/>
+    </span>
+    <span>
+      <label for="favouriteNumb">Choose Your Least Hated Number</label>
+      <input name="favouriteNumb" type="number"/>
+    </span>
     <p class="fine1">
-    <label for="isValid">THE DATA IS ACCURATE TO THE BEST OF MY CURSE ADDLED ABILITIES: </label>
-    <input name="isValid" type="checkbox" required/><br>
-
-    <label for="isFreeWill">I AM NOT UNDER DURESS BY ANY KFC ENTITIES OR THEIR REPRESENTATIVES:</label>
-    <input name="isFreeWill" type="checkbox" required/><br>
+      <span>
+        <h5>TO SUBMIT THIS FORM, YOU MUST CHECK THE FOLLOWING BOXES</h5>
+      </span>
+      <span>
+        <label for="isValid">THE DATA IS ACCURATE TO THE BEST OF MY CURSE ADDLED ABILITIES: </label>
+        <input name="isValid" type="checkbox" required/>
+      </span>
+      <span>
+        <label for="isFreeWill">I AM NOT UNDER DURESS BY ANY KFC ENTITIES OR THEIR REPRESENTATIVES:</label>
+        <input name="isFreeWill" type="checkbox" required/>
+      </span>
     </p>
-
-    <input name="Submit" type="submit">
+    <span>
+      <input name="Submit" type="submit">
+    </span>
     <br>
     <span class='fine1'> NOTICE: SUBMIT does not actually connect anywhere. </span>
 </form>
@@ -54,12 +64,18 @@ export default {
 
 <style>
 
+h4 {
+  margin-bottom: 5px;
+}
+
 .outerBox {
   display: flex;
   justify-content: center;
 }
 
 form {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(#f5d4b7, #fff1e2);
     margin-top: 15px;
     border: 5px solid #a3080c;
@@ -68,13 +84,25 @@ form {
     width: 80%;
 }
 
+
+
 input {
     margin: 10px 0px 10px 0px;
 }
 
 .fine1 {
+    display: flex;
+    flex-direction: column;
     font-size: 12px;
     font-weight: bolder;
+}
+
+.fine1 span {
+    margin-bottom: 0px;
+}
+
+label {
+    margin-right: 20px;
 }
 
 </style>
