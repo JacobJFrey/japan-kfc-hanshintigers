@@ -29,7 +29,7 @@ export default new Vuex.Store({
             {year: '1996', percent: '.415', rank: '12/12'},
             {year: '1997', percent: '.460', rank: '11/12'},
             {year: '1998', percent: '.385', rank: '12/12'},
-            {year: '1999', percent: '.407', rank: '12/12'},
+            {year: '1999', percent: '.407', rank: '12/12'}
          ]},
         {years : "2000 - 2005",
          stats : [
@@ -37,10 +37,17 @@ export default new Vuex.Store({
             {year: '2001', percent: '.416', rank: '11/12'},
             {year: '2002', percent: '.485', rank: '8/12'},
             {year: '2003', percent: '.629', rank: '1/12'},
-            {year: '2004', percent: '.416', rank: '11/12'},
-            {year: '2005', percent: '.416', rank: '11/12'}
+            {year: '2004', percent: '.416', rank: '11/12'}
+            
          ]},
-
+         {years : "2005 - 2009",
+          stats : [
+            {year: '2005', percent: '.617', rank: '3/12'},
+            {year: '2006', percent: '.592', rank: '4/12'},
+            {year: '2007', percent: '.529', rank: '5/12'},
+            {year: '2008', percent: '.582', rank: '2/12'},
+            {year: '2009', percent: '.479', rank: '8/12'}
+          ]}
       ]
   },
   mutations: {

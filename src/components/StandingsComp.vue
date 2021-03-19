@@ -2,18 +2,26 @@
     <div>
        <table>
             <h2>Documentation of the 18-year Losing Streak</h2>
-            <th>
-                <span class="button" v-on:click="decreaseSeason()" >&#171;</span>{{$store.state.standings[this.index].years}}<span class="button" v-on:click="increaseSeason()">&#187;</span>
-            </th>
+            <div class="title">
+                <span class="button" v-on:click="decreaseSeason()" >
+                    <span class="item">{{$store.state.standings[this.previous].years}}</span> 
+                    <span class="item">&#171;</span>
+                </span>
+                    <span class="item">{{$store.state.standings[this.index].years}}</span>
+                <span class="button" v-on:click="increaseSeason()">
+                    <span class="item">&#187;</span> 
+                    <span class="item">{{$store.state.standings[this.next].years}}</span>
+                </span>
+            </div>
             <tr>
                 <th>Year</th>
                 <th>Percent</th>
                 <th>Rank</th>
             </tr>
             <tr v-for="standing in $store.state.standings[this.index].stats" v-bind:key="standing.year">
-                <th>{{standing.year}}</th>
-                <th>{{standing.percent}}</th>
-                <th>{{standing.rank}}</th>
+                <td>{{standing.year}}</td>
+                <td>{{standing.percent}}</td>
+                <td>{{standing.rank}}</td>
             </tr>  
         </table>
     </div>
@@ -25,21 +33,28 @@ export default {
     data() {
         return {
             index: 0,
+            next: 1,
+            previous: 4
         }
     },
     methods: {
         increaseSeason() {
-            this.index++;
-            if (this.index >= this.$store.state.standings.length) {
-                this.index = 0;
+            this.previous = this.index;
+            this.index = this.next;
+            this.next++;
+            if (this.next >= this.$store.state.standings.length) {
+                this.next = 0;
             }
         },
         decreaseSeason() {
-            this.index--;
-            if (this.index < 0) {
-                this.index = this.$store.state.standings.length - 1;
+            this.next = this.index;
+            this.index = this.previous;
+            this.previous--;
+            if (this.previous < 0) {
+                this.previous = this.$store.state.standings.length - 1;
             }
-        }
+        },
+
     }
 }
 
@@ -48,6 +63,10 @@ export default {
 
 <style scoped>
 
+h2 {
+    margin-bottom: 0px;
+}
+
 table {
     color: black;
     display: flex;
@@ -55,14 +74,52 @@ table {
     justify-content: center;
 }
 
+.title {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+  
 tr {
     display: flex;
     justify-content: space-evenly;
 }
 
+td, th {
+    width: 10%;
+    text-align: center;
+}
+
 .button {
-    font-size: 3rem;
+    color: #00000069;
+    font-size: 1.5rem;
     padding: 25px;
+    transition: color 1s;
+}
+
+.button:hover {
+    color: #e7360c;
+}
+
+.item {
+    margin: 40px;
+}
+
+@keyframes previous {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes next {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 </style>
