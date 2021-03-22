@@ -5,6 +5,7 @@ import Form from '@/views/Form.vue'
 import DragAndDrop from '@/views/DragNDrop.vue'
 import Simulator from '@/views/Simulator.vue'
 import Movie from '@/views/Movie.vue'
+import Curse from '@/views/Curse.vue'
 
 Vue.use(VueRouter)
 
@@ -16,7 +17,8 @@ const router = new VueRouter({
   { path: '/Form', name: 'Form', component: Form },
   { path: '/Drag', name: 'DragAndDrop', component: DragAndDrop},
   { path: '/Simulator', name: 'Simulator', component: Simulator},
-  { path: '/Movie', name: 'Movie', component: Movie}
+  { path: '/Movie', name: 'Movie', component: Movie},
+  { path: '/Curse', name: 'Curse', component: Curse}
   ],
 })
 
