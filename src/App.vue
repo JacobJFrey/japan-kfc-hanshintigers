@@ -30,6 +30,7 @@ body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 400;
     width: 100%;
+    overflow-x: hidden;
 }
 
 #app {
