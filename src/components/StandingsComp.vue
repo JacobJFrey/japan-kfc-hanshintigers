@@ -63,7 +63,7 @@ export default {
 <style scoped>
 
 h2 {
-    margin-bottom: 0px;
+    margin-bottom: 3px;
 }
 
 table {

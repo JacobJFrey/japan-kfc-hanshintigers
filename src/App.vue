@@ -6,7 +6,7 @@
       <router-link v-bind:to="{name: 'Curse'}">Curse</router-link>
       <router-link v-bind:to="{name: 'Simulator'}">KFC Simulator</router-link>
       <router-link v-bind:to="{name: 'Movie'}">KFC Movie</router-link>
-      <router-link v-bind:to="{name: 'DragAndDrop'}">Test</router-link>
+      <router-link v-bind:to="{name: 'DragAndDrop'}" v-show=false>Test</router-link>
       <!-- <router-link v-bind:to="{name: 'DragAndDrop'}">Test</router-link> -->
     </nav>
     <router-view />

@@ -59,7 +59,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 /* Cursed view CSS scoped */
 
 h1 {
