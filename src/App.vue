@@ -86,5 +86,25 @@ h5 {
     margin-top: 15px;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+  background-image: linear-gradient(to right,  #444,#333, #444, #555, #666);
+}
+
+::-webkit-scrollbar-track {
+  border: solid 2px black;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right, #e7360c, #e7360cdd, #e7360c55);
+  border-radius: 10px;
+  border: inset 2px black;
+}
+
+::-webkit-scrollbar-corner {
+  background: yellow;
+}
+
 </style>
 
