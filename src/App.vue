@@ -73,7 +73,7 @@ h5 {
 
 ::-webkit-scrollbar-track {
   border: solid 2px black;
-  border-radius: 10px;
+  border-width: 0px 2px;
 }
 
 ::-webkit-scrollbar-thumb {
