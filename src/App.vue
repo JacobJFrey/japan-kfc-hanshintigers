@@ -59,27 +59,6 @@ a {
   color: white;
 }
 
-h1 {
-    color: #e7360c;
-    font-size: 5rem;
-    margin: 0px;
-    font-weight: 500;
-}
-
-h2 {
-    color: #e7360c;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 500;
-    text-decoration: underline;
-}
-
-h3 {
-    font-weight: 400;
-    text-decoration: overline;
-    font-size: 2.5rem;
-    margin: 0px;
-}
-
 h5 {
     font-weight: 300;
     font-size: 1.5rem;

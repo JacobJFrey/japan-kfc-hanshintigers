@@ -1,9 +1,19 @@
 <template>
     <body>
+
+      <header>
+        <img class="badge" alt="hanshin tiger logo" src="@/assets/HanshinTigersLogo.jpg">
+        <div class="title">
+          <h1>Kaneru Sandasu no Noroi</h1>
+          <h3>THE CURSE OF THE COLONEL</h3>
+        </div>
+      </header>
+
         <hr>
-          <table>
+
+          <table class="timeline">
               <h2>Timeline of Pertinent Events</h2>
-              <ul class="timeline">
+              <ul >
               <li>In the 1985 Japan Championship Series, underdog Hanshin Tigers of Kansai beat the Yomiuri Giants of Tokyo, widely considered the Kings of Japanese Baseball.</li>
               <li>Hanshin fans erupted in celebration at Ebisu Bridge in Osaka, where fans celerbrated by jumping in the river when a player's name was shouted out.</li>
               <li>Randy Bass did not have a fan that resembled him so fans seized a plastic statue of Colonel Sanders from the nearby KFC and threw it into the river.</li>
@@ -12,9 +22,10 @@
               <li>The curse can only be lifted when the left hand and glasses of the original statue are returned to KFC.</li>
               </ul>
           </table>
+
         <hr>
 
-        <div>
+        <div class="quotes">
           <h2>Quotes</h2>
           <blockquote>
               The colonel will be kept in police custody for the time being, but Yokakawa said KFC is considering donating him to the home stadium of the Tigers in Osaka.
@@ -33,6 +44,7 @@
         <hr>
 
         <standings-comp />
+
     </body>
 </template>
 
@@ -46,3 +58,61 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* Cursed view CSS scoped */
+
+h1 {
+    color: #e7360c;
+    font-size: 5rem;
+    margin: 0px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+h2 {
+    color: #e7360c;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0px;
+}
+
+hr {
+  background: #e7360c;
+  border: 2px inset #e7360c;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  width: auto;
+  margin:auto;
+  padding: auto;
+}
+
+.timeline>ul {
+  border-left: 4px;
+  border-color: black;
+  border-style: none none none solid;
+  padding-left: 0px;
+  margin-left: 20px;
+}
+
+.timeline>ul>li {
+  list-style-type: square;
+}
+
+.quotes {
+  width: 90%;
+  display: inline-block;
+  margin: 40px;
+}
+
+</style>

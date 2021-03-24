@@ -1,10 +1,10 @@
 <template>
 <body>
     <div id="moviePoster">
-    
-        <img class="aRecipeForSeduction" src="@/assets/kfcmovie.jpg" />
-        
-    <figcaption class="caption">LINK TO <a href="https://www.youtube.com/watch?v=j0e7Bj_7T3k">A RECIPE FOR SEDUCTION </a></figcaption>
+      <a href="https://www.youtube.com/watch?v=j0e7Bj_7T3k">
+        <img class="aRecipeForSeduction" src="@/assets/kfcmovie.jpg" />        
+        <figcaption class="caption">LINK TO A RECIPE FOR SEDUCTION </figcaption>
+      </a>
     </div>
 </body>
 </template>
