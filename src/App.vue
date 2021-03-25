@@ -56,7 +56,9 @@ nav {
 }
 
 a {
-  color: white;
+  text-decoration: none;
+  text-align: center;
+  color: #e7360c;
 }
 
 h5 {

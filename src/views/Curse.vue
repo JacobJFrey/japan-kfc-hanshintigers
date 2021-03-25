@@ -62,6 +62,14 @@ export default {
 <style>
 /* Cursed view CSS scoped */
 
+body:last-child {
+  margin-bottom: 100px;
+}
+
+header {
+  margin: 25px 0px 50px 0px;
+}
+
 h1 {
     color: #e7360c;
     font-size: 5rem;
@@ -104,6 +112,16 @@ hr {
   padding: auto;
 }
 
+.timeline {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  font-size: 1.5rem;
+  color: black;
+  margin: 60px;
+}
+
 .timeline>ul {
   border-left: 4px;
   border-color: black;
@@ -114,6 +132,24 @@ hr {
 
 .timeline>ul>li {
   list-style-type: square;
+}
+
+li {
+  margin: 15px;
+}
+
+.badge {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 4px black;
+  margin: 10px 0px 20px 0px;
+}
+
+blockquote {
+    font-style: italic;
+    text-align: justify;
+    color: black;
 }
 
 .quotes {
