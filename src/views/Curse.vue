@@ -68,20 +68,26 @@ h1 {
     margin: 0px;
     font-weight: 500;
     text-decoration: underline;
+    text-shadow: 1px -1px #e7360c, -1px 1px #e7360c, -1px -1px white, 1px 1px darkred;
+
 }
 
 h2 {
     color: #e7360c;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 500;
-    text-decoration: underline;
     text-align: center;
+    text-shadow: 1px -1px #e7360c, -1px 1px #e7360c, -1px -1px white, 1px 1px darkred;
+
 }
 
 h3 {
     font-weight: 400;
     font-size: 2.5rem;
     margin: 0px;
+    text-shadow: 1px -1px #e7360c, -1px 1px #e7360c, -1px -1px white, 1px 1px darkred;
+    position: relative;
+    left: 100px;
 }
 
 hr {

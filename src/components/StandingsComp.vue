@@ -1,7 +1,7 @@
 <template>
     <div>
        <table>
-            <h2>Documentation of the 18-year Losing Streak</h2>
+            <h2>Documentation of the 16-year Losing Streak</h2>
             <div class="title">
                 <span class="button" v-on:click="decreaseSeason()" >
                     <span class="item">{{$store.state.standings[this.previous].years}}</span> 
@@ -92,7 +92,7 @@ td, th {
     color: #00000069;
     font-size: 1.5rem;
     padding: 25px;
-    transition: color 1s;
+    transition: color .6s;
 }
 
 .button:hover {
