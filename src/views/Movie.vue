@@ -3,7 +3,7 @@
     <div id="moviePoster">
       <a href="https://www.youtube.com/watch?v=j0e7Bj_7T3k">
         <img class="aRecipeForSeduction" src="@/assets/kfcmovie.jpg" />        
-        <figcaption class="caption">LINK TO A RECIPE FOR SEDUCTION </figcaption>
+        <figcaption class="caption">LINK TO <span class="captionname">A RECIPE FOR SEDUCTION</span> </figcaption>
       </a>
     </div>
     <article>
@@ -94,6 +94,10 @@ img {
 
 figcaption > a {
   text-decoration: none;
+  color: white;
+}
+
+.captionname {
   color: white;
 }
 

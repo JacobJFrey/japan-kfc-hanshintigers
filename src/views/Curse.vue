@@ -140,9 +140,9 @@ li {
 
 .badge {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  box-shadow: 2px 2px 4px black;
+  width: auto;
+  height: auto;
+  box-shadow: 3px 3px 6px #0008;
   margin: 10px 0px 20px 0px;
 }
 

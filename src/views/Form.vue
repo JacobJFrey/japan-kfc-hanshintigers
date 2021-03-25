@@ -107,8 +107,18 @@ form {
     width: 80%;
 }
 
-input {
-    margin: 10px 0px 10px 0px;
+form>span {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 2px;
+}
+
+label {
+    margin-right: 20px;
+    text-align: right;
 }
 
 .fine1 {
@@ -119,10 +129,6 @@ input {
 
 .fine1 span {
     margin-bottom: 0px;
-}
-
-label {
-    margin-right: 20px;
 }
 
 </style>
