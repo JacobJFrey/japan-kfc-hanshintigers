@@ -91,6 +91,7 @@ h3 {
 }
 
 hr {
+  width: 90%;
   background: #e7360c;
   border: 2px inset #e7360c;
   margin-top: 20px;
