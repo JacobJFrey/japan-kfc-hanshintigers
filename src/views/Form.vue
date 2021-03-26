@@ -30,17 +30,17 @@
           <label for="favouriteNumb">Choose Your Least Hated Number</label>
           <input name="favouriteNumb" type="number" v-model="formformation.favouriteNumb" />
         </span>
-        <p class="fine1">
+        <p class="fine2">
           <span>
             <h5>TO SUBMIT THIS FORM, YOU MUST CHECK THE FOLLOWING BOXES</h5>
           </span>
           <span>
             <label for="isValid">THE DATA IS ACCURATE TO THE BEST OF MY CURSE ADDLED ABILITIES: </label>
-            <input name="isValid" type="checkbox" v-model="formformation.isValid" required/>
+            <input class="check" name="isValid" type="checkbox" v-model="formformation.isValid" required/>
           </span>
           <span>
             <label for="isFreeWill">I AM NOT UNDER DURESS BY ANY KFC ENTITIES OR THEIR REPRESENTATIVES:</label>
-            <input name="isFreeWill" type="checkbox" v-model="formformation.isFreeWill" required/>
+            <input class="check" name="isFreeWill" type="checkbox" v-model="formformation.isFreeWill" required/>
           </span>
         </p>
         <span class="submit">
@@ -116,6 +116,10 @@ h4 {
   padding: 0px 10px 0px 5px;
 }
 
+.disclaimer>p {
+  text-align: justify;
+}
+
 .outerBox {
   display: flex;
   justify-content: center;
@@ -135,24 +139,37 @@ form>span:not(.submit) {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-between;
   padding: 5px;
   margin: 2px;
 }
 
-label {
+form>span>label {
+    width: 50%;
     margin-right: 20px;
     text-align: right;
 }
 
-.fine1 {
+.fine1,
+.fine2 {
     display: flex;
     flex-direction: column;
     font-size: 18px;
 }
 
+.fine2 {
+  width: auto;
+  margin:auto;
+}
+
 .fine1 span {
     margin-bottom: 0px;
+}
+
+.fine2 span:not(:first-child) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 2%;
 }
 
 .notice {

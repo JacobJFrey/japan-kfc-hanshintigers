@@ -59,7 +59,7 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
 /* Cursed view CSS scoped */
 
 body:last-child {
@@ -123,7 +123,7 @@ hr {
 }
 
 .timeline>ul {
-  border-left: 4px;
+  border-left: 1px;
   border-color: black;
   border-style: none none none solid;
   padding-left: 0px;
@@ -131,11 +131,17 @@ hr {
 }
 
 .timeline>ul>li {
-  list-style-type: square;
+  list-style-type: none;
 }
 
 li {
-  margin: 15px;
+  padding: 5px 25px;
+}
+
+li:before {
+  content: '━';
+  margin-left: -25px;
+  margin-right: -3px;
 }
 
 .badge {
