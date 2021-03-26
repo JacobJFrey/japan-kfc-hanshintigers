@@ -79,9 +79,6 @@ img {
     width: 100%;
 }
 
-.caption {
-  font-size: 1rem;
-}
 
 #moviePoster {
   border: 4px solid #222;
@@ -90,6 +87,10 @@ img {
   margin-right: auto;
   width: 50%;
   box-shadow: 2px 2px 2px black;
+}
+
+.caption {
+  font-size: 1rem;
 }
 
 figcaption > a {

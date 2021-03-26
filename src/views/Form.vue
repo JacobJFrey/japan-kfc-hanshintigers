@@ -60,7 +60,7 @@ export default {
         userName: "",
         emailAddress: "",
         DOBirth: "",
-        favouriteColour: "",
+        favouriteColour: "#ffffff",
         favouriteNumb: 0,
         isValid: false,
         isFreeWill: false,
@@ -73,7 +73,7 @@ export default {
         userName: "",
         emailAddress: "",
         DOBirth: "",
-        favouriteColour: "",
+        favouriteColour: "#ffffff",
         favouriteNumb: 0,
         isValid: false,
         isFreeWill: false,
@@ -86,9 +86,6 @@ export default {
     },
   },
   computed: {
-    background(){
-      return true
-    },
   }
 }
 </script>

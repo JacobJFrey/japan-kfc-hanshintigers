@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
 
   state: {
+    KFCURL: "https://www.kfc.com/",
     standings: [
         {years : "1985 - 1989",
          stats : [
