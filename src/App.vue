@@ -9,7 +9,9 @@
       <router-link v-bind:to="{name: 'DragAndDrop'}" v-show=false>Test</router-link>
       <!-- <router-link v-bind:to="{name: 'DragAndDrop'}">Test</router-link> -->
     </nav>
-    <router-view />
+    <div class="main"> 
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -44,6 +46,10 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
   background-color: black;
   margin-top: -10px;
   margin-left: -10px;
@@ -62,10 +68,14 @@ a {
 }
 
 h5 {
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin: 0px;
-    margin-top: 15px;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.main {
+  margin-top: 55px;
 }
 
 ::-webkit-scrollbar {
