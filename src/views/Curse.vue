@@ -29,15 +29,15 @@
           <h2>Quotes</h2>
           <blockquote>
               The colonel will be kept in police custody for the time being, but Yokakawa said KFC is considering donating him to the home stadium of the Tigers in Osaka.
-            <br><a href="http://www.nbcnews.com/id/29629104/ns/world_news-weird_news/t/colonel-sanders-pulled-river-after-years/#.XwNudJNKhle">NBC News.com</a>
+            <br><a href="http://www.nbcnews.com/id/29629104/ns/world_news-weird_news/t/colonel-sanders-pulled-river-after-years/#.XwNudJNKhle" target="_blank" rel="noopener noreferrer">NBC News.com</a>
             </blockquote>
           <blockquote>
             The "Curse of the Colonel" has also been used as a bogeyman threat to those who would divulge the secret recipe of eleven herbs and spices that result in the unique taste of his chicken.
-            <br><a href="https://en.wikipedia.org/wiki/Curse_of_the_Colonel">wikipedia: Curse of the Colonel</a>
+            <br><a href="https://en.wikipedia.org/wiki/Curse_of_the_Colonel" target="_blank" rel="noopener noreferrer">wikipedia: Curse of the Colonel</a>
           </blockquote>
           <blockquote>
             "He was apparently found standing upright, which is fitting, because although he was a nice man he could also be very strict and demanding," <br> ~ KFC Spokeswoman Sumeo Yokakawa upon recovery of Colonel Sanders statue.
-            <br><a href="https://www.dispatch.com/article/20090311/NEWS/303119481">The Columbus Dispatch</a>
+            <br><a href="https://www.dispatch.com/article/20090311/NEWS/303119481" target="_blank" rel="noopener noreferrer">The Columbus Dispatch</a>
           </blockquote>
         </div>  
 
@@ -156,6 +156,14 @@ blockquote {
     font-style: italic;
     text-align: justify;
     color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+blockquote>a {
+  width: auto;
+  padding: 5px;
+  text-align: right;
 }
 
 .quotes {
