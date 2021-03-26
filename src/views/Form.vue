@@ -90,6 +90,7 @@ h4 {
   color: white;
   border: 5px solid #a3080c;
   border-radius: 0px 25px 25px 0px;
+  padding: 0px 10px 0px 5px;
 }
 
 .outerBox {

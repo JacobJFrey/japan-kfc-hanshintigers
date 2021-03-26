@@ -17,22 +17,39 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .caption {
   font-size: 1rem;
 }
 
-#home {
+.home {
+  background-color: white;
+  background-image: url("../assets/JapanBacker.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  margin: -10px;
+}
+
+.home {
   display: flex;
   justify-content: center;
 }
 
 p {
-  width: 80%;
-  margin-left: 10%;
+  width: 69%;
+  height: fit-content;
   text-align: justify;
   font-size: 1.5rem;
+  background-image:radial-gradient(circle,#fff2,#fff4, #fff6 );
+  padding: 20px;
+  text-shadow: 2px 2px 2px #fffa;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 3px 4px 7px #0008;
 }
 
 a {
