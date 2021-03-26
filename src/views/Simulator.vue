@@ -39,6 +39,15 @@ methods: {
   color: white;
 }
 
+.caption {
+  font-size: 1rem;
+}
+
+figcaption > a {
+  text-decoration: none;
+  color: white;
+}
+
 .captionname {
   color: white;
 }

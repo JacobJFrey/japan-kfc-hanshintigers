@@ -7,28 +7,28 @@
       Exposure to fried chicken in Japanese KFCs or Baseball Stadia may put you at risk. 
       Please fill out the following form today to get a free consultation and emotional information packet.</p>
     </div>
-    <form action="https://localhost:3000/api/404" method="POST" v-on:submit.prevent="dontSubmit();">
+    <form action="https://localhost:3000/api/404" method="POST" v-on:submit.prevent="dontSubmit();" >
         <h4>Curse Exposure Assessment Form</h4>
         Please fill the following form to the best of your curse addled abilities:<br><br>
         <span>
-          <label for="useName">Full Legal Name</label>
-          <input name="userName" type="text" required/>
+          <label for="userName">Full Legal Name</label>
+          <input name="userName" type="text" v-model="formformation.userName" required/>
         </span>
         <span>  
           <label for="emailAddress">Full Legal Email</label>
-          <input name="emailAddress" type="email" required/>
+          <input name="emailAddress" type="email" v-model="formformation.emailAddress" required/>
         </span>
         <span>
           <label for="DOBirth">Select Your Legal Date of Birth</label>
-          <input name="DOBirth" type="date"/>
+          <input name="DOBirth" type="date" v-model="formformation.DOBirth" />
         </span>
         <span>
           <label for="favouriteColour">What Color Do You 'Think' You Like</label>
-          <input name="favouriteColour" type="color"/>
+          <input name="favouriteColour" type="color" v-model="formformation.favouriteColour" />
         </span>
         <span>
           <label for="favouriteNumb">Choose Your Least Hated Number</label>
-          <input name="favouriteNumb" type="number"/>
+          <input name="favouriteNumb" type="number" v-model="formformation.favouriteNumb" />
         </span>
         <p class="fine1">
           <span>
@@ -36,18 +36,17 @@
           </span>
           <span>
             <label for="isValid">THE DATA IS ACCURATE TO THE BEST OF MY CURSE ADDLED ABILITIES: </label>
-            <input name="isValid" type="checkbox" required/>
+            <input name="isValid" type="checkbox" v-model="formformation.isValid" required/>
           </span>
           <span>
             <label for="isFreeWill">I AM NOT UNDER DURESS BY ANY KFC ENTITIES OR THEIR REPRESENTATIVES:</label>
-            <input name="isFreeWill" type="checkbox" required/>
+            <input name="isFreeWill" type="checkbox" v-model="formformation.isFreeWill" required/>
           </span>
         </p>
-        <span>
+        <span class="submit">
           <input name="Submit" type="submit">
         </span>
-        <br>
-        <span class='fine1'> NOTICE: SUBMIT does not actually connect anywhere. </span>
+        <span class='fine1 notice'> NOTICE: SUBMIT does not actually connect anywhere. </span>
     </form>
   </div>
 </template>
@@ -55,10 +54,35 @@
 <script>
 export default {
   name: "About",
+  data() {
+    return {
+      formformation: {
+        userName: "",
+        emailAddress: "",
+        DOBirth: "",
+        favouriteColour: "",
+        favouriteNumb: 0,
+        isValid: false,
+        isFreeWill: false,
+        }    
+      }
+  },
   methods: {
     clearForm() {
+      this.formformation = {
+        userName: "",
+        emailAddress: "",
+        DOBirth: "",
+        favouriteColour: "",
+        favouriteNumb: 0,
+        isValid: false,
+        isFreeWill: false,
+        };
     },
     dontSubmit() {
+      alert("Submit does not actually submit the information anywhere. This is purely for demonstration purposes only.");
+      document.querySelector("#app > div").style.background = this.formformation.favouriteColour;
+      this.clearForm();
     },
   },
   computed: {
@@ -77,7 +101,9 @@ export default {
   flex-direction: row-reverse;
   align-items: flex-start;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 40px 20px 20px;
+  margin: -10px;
+  height: 100vh;
 }
 
 h4 {
@@ -108,11 +134,11 @@ form {
     width: 80%;
 }
 
-form>span {
+form>span:not(.submit) {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 5px;
   margin: 2px;
 }
@@ -130,6 +156,12 @@ label {
 
 .fine1 span {
     margin-bottom: 0px;
+}
+
+.notice {
+  display:flex;
+  text-align: center;
+  align-self:flex-end ;
 }
 
 </style>
