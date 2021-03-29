@@ -127,7 +127,10 @@ h4 {
   padding: 50px;
   font-size: 5rem;
   text-shadow: 2px 2px black, 2px -2px black, -2px -2px black, -2px 2px black, 0px 2px black, 0px -2px black, -2px 0px black, -2px 0px black;
-  color: white;}
+  color: white;
+  transition: height 1s, background-color 3s;
+}
+  
 
 .disclaimer {
   background: #a3080c;

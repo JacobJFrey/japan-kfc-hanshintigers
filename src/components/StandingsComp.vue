@@ -18,7 +18,7 @@
                 <th>Percent</th>
                 <th>Rank</th>
             </tr>
-            <tr v-for="standing in $store.state.standings[this.index].stats" v-bind:key="standing.year">
+            <tr class="carousel" v-for="standing in $store.state.standings[this.index].stats" v-bind:key="standing.year">
                 <td>{{standing.year}}</td>
                 <td>{{standing.percent}}</td>
                 <td>{{standing.rank}}</td>
@@ -105,6 +105,10 @@ td, th {
 
 .direction {
     font-size: 2.5rem;
+}
+
+.carousel {
+    transition: opacity 2s;
 }
 
 @keyframes previous {

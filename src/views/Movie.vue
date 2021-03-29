@@ -11,29 +11,36 @@
         <div class="button" v-on:click="toggle('KFC')">
           KFC Press Release
         </div>
+        <transition name="fade">
         <div class="press-release" v-show="showKFC">
             <p>Order a KFC bucket meal for delivery, and cozy up with Mario Lopez as Colonel Harland Sanders in the KFC-branded Lifetime Original Mini-Movie premiere</p>
             <p>Louisville, Kentucky, December 7, 2020- Kentucky Fried Chicken® and Lifetime® are teaming up to bring consumers the perfect distraction from all things 2020: the holiday Lifetime Original Mini-Movie, "A Recipe for Seduction." Featuring veteran actor and star of Lifetime's FelizNaviDAD Mario Lopez as Colonel Harland Sanders, the first-of-its kind 15-minute Lifetime Original Mini-Movie is full of mystery, suspense, deception, "fowl" play and - at the heart of it all - love and fried chicken. "A Recipe For Seduction" premieres on Lifetime Sunday, December 13 at 12 p.m. ET/PT.</p>
             <a href="https://global.kfc.com/press-releases/kfc-and-lifetime-heat-up-the-holidays-with-a-first-of-its-kind-lifetime" target="_blank" rel="noopener noreferrer">Click here to read more of the KFC Press Release...</a>
         </div>
+        </transition>
       </div>
       <div>
         <div class="button" v-on:click="toggle('Lifetime')">
             Lifetime Channel
         </div>
-        <div class="press-release" v-show="showLifetime">
-            <p>Lifetime channel does not currently have a Press Release</p>
-            <a href="https://www.mylifetime.com/" target="_blank" rel="noopener noreferrer"> Click here to go to the Lifetime website...</a>
-        </div>
+        <transition name="fade">
+          <div class="press-release" v-show="showLifetime">
+              <p>Lifetime channel does not currently have a Press Release</p>
+              <a href="https://www.mylifetime.com/" target="_blank" rel="noopener noreferrer"> Click here to go to the Lifetime website...</a>
+          </div>
+        </transition>
       </div>
+
       <div>
         <div class="button" v-on:click="toggle('UberEats')">
             Uber Eats Promotion
         </div>
-        <div class="press-release" v-show="showUberEats">
-            <p>The project was paired with an Uber Eats promotion, that offered customers free extra crispy tenders with an order of $20 or more on the UberEats platform.</p>
-            <a href="https://www.ubereats.com/" target="_blank" rel="noopener noreferrer"> Click here to go the UberEats website....</a>
-        </div>
+        <transition name="fade">
+          <div class="press-release" v-show="showUberEats">
+              <p>The project was paired with an Uber Eats promotion, that offered customers free extra crispy tenders with an order of $20 or more on the UberEats platform.</p>
+              <a href="https://www.ubereats.com/" target="_blank" rel="noopener noreferrer"> Click here to go the UberEats website....</a>
+          </div>
+        </transition>
       </div>
 
     </article>
@@ -152,6 +159,14 @@ article>div {
 
 .press-release>p {
     margin: 10px 0px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 @keyframes shine{
