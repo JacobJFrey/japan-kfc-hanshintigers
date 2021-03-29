@@ -7,6 +7,7 @@ export default new Vuex.Store({
 
   state: {
     KFCURL: "https://www.kfc.com/",
+    wikipediaURL: "https://en.wikipedia.org/wiki/Curse_of_the_Colonel",
     standings: [
         {years : "1985 - 1989",
          stats : [

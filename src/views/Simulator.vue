@@ -7,12 +7,12 @@
       </a>
       <p>
         I Love You, Colonel Sanders! A Finger Lickin' Good Dating Simulator is an otome dating sim developed by Psyop. The video game was commissioned by the restaurant chain KFC and released for free on Steam on September 24, 2019. 
-        <a class="reference">Wikipedia</a>
+        <a class="reference" v-on:click="toURL($store.state.wikipediaURL)" >Wikipedia</a>
         <table>
         <tr><td>Initial release date:</td><td>September 24, 2019</td></tr>
         <tr><td>Developer:</td><td> Psyop</td></tr>
         <tr><td>Mode:</td><td> Single-player video game</td></tr>
-        <tr><td>Publishers:</td><td><a>KFC, KFC Corporation</a></td></tr>
+        <tr><td>Publishers:</td><td><a v-on:click="toURL($store.state.KFCURL)">KFC, KFC Corporation</a></td></tr>
         <tr><td>Genres:</td><td> Dating sim, Adventure game, Indie game, Casual game, Simulation Game, Advertising in video games, Simulation</td></tr>
         <tr><td>Platforms:</td><td> Microsoft Windows, macOS, Macintosh operating systems</td></tr>
         </table>
@@ -24,9 +24,14 @@
 <script>
 export default {
   name: "Simulator",
-
+  data() {
+    return {
+    }
+  },
 methods: {
- 
+    toURL(url) {
+      window.location.assign(url);
+    },
   }
 }
 </script>
@@ -97,6 +102,15 @@ table>tr>td:last-of-type {
 
 .reference {
   text-justify: auto;
+}
+
+p a {
+  transition: color 1.5s;
+}
+
+p a:hover {
+  color: #fce300;
+  cursor: pointer;
 }
 
 </style>
