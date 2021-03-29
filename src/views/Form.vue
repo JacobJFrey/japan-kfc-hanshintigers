@@ -1,11 +1,16 @@
 <template>
   <div class="about">
-    <div class="disclaimer">
-      <h5>Legal Disclaimer</h5>
-      <p class="fine1">If you or a loved one has suffered from the Curse of the Colonel, you may to be entitled to emotional compensation. 
-      'the Colonel' is a rare curse linked to fried chicken exposure. 
-      Exposure to fried chicken in Japanese KFCs or Baseball Stadia may put you at risk. 
-      Please fill out the following form today to get a free consultation and emotional information packet.</p>
+    <div class="rightlane">
+      <div class="disclaimer">
+        <h5>Legal Disclaimer</h5>
+        <p class="fine1">If you or a loved one has suffered from the Curse of the Colonel, you may to be entitled to emotional compensation. 
+        'the Colonel' is a rare curse linked to fried chicken exposure. 
+        Exposure to fried chicken in Japanese KFCs or Baseball Stadia may put you at risk. 
+        Please fill out the following form today to get a free consultation and emotional information packet.</p>
+      </div>
+      <div class="colorswatch">
+        {{this.FavoriteNumber}}
+      </div>
     </div>
     <form action="https://localhost:3000/api/404" method="POST" v-on:submit.prevent="dontSubmit();" >
         <h4>Curse Exposure Assessment Form</h4>
@@ -64,7 +69,8 @@ export default {
         favouriteNumb: 0,
         isValid: false,
         isFreeWill: false,
-        }    
+        },
+        FavoriteNumber: "",    
       }
   },
   methods: {
@@ -81,7 +87,8 @@ export default {
     },
     dontSubmit() {
       alert("Submit does not actually submit the information anywhere. This is purely for demonstration purposes only.");
-      document.querySelector("#app > div").style.background = this.formformation.favouriteColour;
+      document.querySelector("#app > div > div > div > div.colorswatch").style.background = this.formformation.favouriteColour;
+      this.FavoriteNumber = this.formformation.favouriteNumb;
       this.clearForm();
     },
   },
@@ -107,12 +114,26 @@ h4 {
   margin-bottom: 5px;
 }
 
-.disclaimer {
+.rightlane {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.colorswatch {
+  background: #a3080c;
+  border: 5px solid #a3080c;
+  border-radius: 0px 0px 25px 0px;
+  padding: 50px;
+  font-size: 5rem;
+  text-shadow: 2px 2px black, 2px -2px black, -2px -2px black, -2px 2px black, 0px 2px black, 0px -2px black, -2px 0px black, -2px 0px black;
+  color: white;}
+
+.disclaimer {
   background: #a3080c;
   color: white;
   border: 5px solid #a3080c;
-  border-radius: 0px 25px 25px 0px;
+  border-radius: 0px 25px 0px 0px;
   padding: 0px 10px 0px 5px;
 }
 
