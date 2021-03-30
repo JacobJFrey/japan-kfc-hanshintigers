@@ -162,11 +162,12 @@ article>div {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity 1s;
+  transition: opacity 1s, transform 1s, height 1s;
 }
 
 .fade-enter, .fade-leave-to {
   opacity: 0;
+  transform: rotateX(90deg);
 }
 
 @keyframes shine{
