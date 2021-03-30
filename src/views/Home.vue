@@ -3,7 +3,7 @@
     <p>
         One affectation Japanese have with Western Culture is KFC Chicken. 
         Every Christmas, an estimated 3.6 million Japanese families enjoy KFC chicken in what has become a nationwide tradition.
-        So, it is not surprising there would be at least one urban legend surrounding KFC and Colonel Sanders.
+        So, it is not surprising there would be integration of KFC and Colonel Sanders into pop culture and at least one urban legend involving Colonel Sanders himself.
     </p>
   </div>
 </template>
@@ -49,7 +49,7 @@ p {
   text-shadow: 2px 2px 2px #fffa;
   border-radius: 20px;
   color: black;
-  box-shadow: 3px 4px 7px #0008;
+  box-shadow: 3px 4px 7px rgba(0, 0, 100, 0.8);
 }
 
 a {
