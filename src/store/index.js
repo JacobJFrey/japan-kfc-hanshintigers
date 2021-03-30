@@ -6,9 +6,14 @@ Vue.use(Vuex)
 export default new Vuex.Store({
 
   state: {
-    KFCURL: "https://www.kfc.com/",
-    wikipediaURL: "https://en.wikipedia.org/wiki/Curse_of_the_Colonel",
+    URLS: {
+    KFC_com: "https://www.kfc.com/",
+    wiki_curse_URL: "https://en.wikipedia.org/wiki/Curse_of_the_Colonel",
     wiki_simulator_URL: "https://en.wikipedia.org/wiki/I_Love_You,_Colonel_Sanders!",
+    psyop_com: "https://www.psyop.com/",
+    steam_com: "https://store.steampowered.com/",
+    steam_simulator: "https://store.steampowered.com/app/1121910/I_Love_You_Colonel_Sanders_A_Finger_Lickin_Good_Dating_Simulator/",
+    },
     standings: [
         {years : "1985 - 1989",
          stats : [
