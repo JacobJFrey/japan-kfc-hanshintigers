@@ -8,6 +8,7 @@ export default new Vuex.Store({
   state: {
     KFCURL: "https://www.kfc.com/",
     wikipediaURL: "https://en.wikipedia.org/wiki/Curse_of_the_Colonel",
+    wiki_simulator_URL: "https://en.wikipedia.org/wiki/I_Love_You,_Colonel_Sanders!",
     standings: [
         {years : "1985 - 1989",
          stats : [
